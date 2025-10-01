@@ -68,21 +68,28 @@ Setiap surat yang diterbitkan dapat dipindai (scan) dalam format PDF dan disimpa
     ```bash
     git clone https://github.com/mdavaam/arsip-surat.git
     cd arsip-surat
-    Install Dependencies
-
     ```
 
 2. **Install Dependencies**
-   composer install
-   Environment Setup
+
+    ```bash
+    composer install
+    Environment Setup
+    ```
 
 3. **Environment Setup**
-   cp .env.example .env
-   php artisan key:generate
+
+    ```bash
+    cp .env.example .env
+    php artisan key:generate
+    ```
 
 4. **Database Setup**
-   touch database/database.sqlite
-   php artisan migrate:fresh --seed
-
+    ```bash
+    touch database/database.sqlite
+    php artisan migrate:fresh --seed
+    ```
 5. **Jalankan Server**
-   php artisan serve
+    ```bash
+    php artisan serve
+    ```
