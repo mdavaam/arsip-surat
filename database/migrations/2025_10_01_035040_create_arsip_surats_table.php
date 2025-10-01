@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('file_path');
             $table->timestamp('waktu_pengarsipan');
             $table->timestamps();
-            
+
             $table->foreign('kategori_id')->references('id')->on('kategoris');
         });
     }

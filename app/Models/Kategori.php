@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Kategori extends Model
 {
     protected $fillable = ['nama_kategori', 'keterangan'];
-    
+
     public function arsipSurat()
     {
         return $this->hasMany(ArsipSurat::class);

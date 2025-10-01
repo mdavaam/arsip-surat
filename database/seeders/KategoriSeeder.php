@@ -31,7 +31,7 @@ class KategoriSeeder extends Seeder
                 'keterangan' => 'Kategori ini digunakan untuk surat yang sifatnya berupa pengumuman atau menginformasikan suatu perihal.'
             ]
         ];
-        
+
         foreach ($kategoris as $kategori) {
             Kategori::create($kategori);
         }
